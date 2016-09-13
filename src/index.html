@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        html,body,section, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            background: lightblue;
+        }
+        ul, li {
+            list-style: none;
+        }
+
+        section {
+            width: 450px;
+            margin:50px auto;
+            position: relative;
+        }
+
+        section div ul{
+            height: 50px;
+            width: 450px;
+        }
+
+        section div ul li {
+            display: inline-block;
+            background: red;
+            width: 48px;
+            height: 48px;
+            border: 1px solid black;
+        }
+
+        .black, .white {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            z-index: 1000;
+            border-radius: 50%;
+        }
+
+        .black {
+            background: black;
+        }
+
+        .white {
+            background: white;
+        }
+        .undo,.clearGame{
+            position: absolute;
+            width: 50px;
+            height: 20px;
+            background: red;
+            bottom: 20px;
+        }
+        .undo{
+            right: 30%;
+        }
+        .clearGame{
+            left: 30%;
+        }
+
+
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+        <ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+        <ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+        <ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+        <ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+        <ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+        <ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+        <ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+        <ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+    </div>
+
+
+</section>
+<button type="button" class="undo">悔棋</button>
+<button type="button" class="clearGame">重来</button>
+</body>
+</html>
+<script src="index.js"></script>
